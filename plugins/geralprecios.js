@@ -58,10 +58,10 @@ let str = `╭「𝙿𝚁𝙴𝙲𝙸𝙾𝚂 𝙳𝙴 𝙰𝙳𝚁𝙸𝙴𝙻-
 ╰───────────────╯
 🐻‍❄️᭢━━━━━━━━━᭥🐻‍❄️᭢
 ╭「𝐀𝐂𝐋𝐀𝐑𝐀𝐂𝐈𝐎𝐍𝐄𝐒」
-│🤖NO HAGO VIDA SOCIAL AL PRIVD
-│🤖NO HAGO REMBOLSOS SI NO ESTAS SEGUR@ DE COMPRAR ALGO NO LO HAGAS
-│🤖NO ACEPTO SPAM COMO PAGO
-│🤖NO REGALO NADA, SOLO HAGO DESCUENTOS ALOS QUE YA AN SIDO CLIENTES O SI COMPRAN MAS COSAS
+│❄️NO HAGO VIDA SOCIAL AL PRIVD
+│❄️NO HAGO REMBOLSOS SI NO ESTAS SEGUR@ DE COMPRAR ALGO NO LO HAGAS
+│❄️NO ACEPTO SPAM COMO PAGO
+│❄️NO REGALO NADA, SOLO HAGO DESCUENTOS ALOS QUE YA AN SIDO CLIENTES O SI COMPRAN MAS COSAS
 ╰───────────────╯`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
