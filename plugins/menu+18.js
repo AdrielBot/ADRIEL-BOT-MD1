@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
-await m.reply(`╭「 𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 」\n│➯(♦️)*Hola estás en el menú+18 elige una opción y pide una imagen*\n╰───────────────╯\n\n\n╭「 𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 」\n│➯(♦️)*Hello you are in the menu+18 choose an option and ask for an image*\n╰───────────────╯`)
+await m.reply(`╭「 𝐀𝐝𝐫𝐢𝐞𝐥 𝐁𝐨𝐭 」\n│➯(♦️)*Hola estás en el menú+18 elige una opción y pide una imagen*\n╰───────────────╯\n\n\n╭「 𝐀𝐝𝐫𝐢𝐞𝐥 𝐁𝐨𝐭 」\n│➯(♦️)*Hello you are in the menu+18 choose an option and ask for an image*\n╰───────────────╯`)
 let pp = imagen4
 let img = await(await fetch('https://i.imgur.com/JP52fdP.jpg')).buffer()
 let d = new Date(new Date + 3600000)
@@ -17,17 +17,17 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = `╭「 Bᴏɴɴɪ💕 」
+let str = `╭「 𝐀𝐝𝐫𝐢𝐞𝐥𝐁𝐨𝐭🐻‍❄️ 」
 │➯𝗛ᴏʟᴀ,➟${taguser}
-│➯ *𝙲𝚁𝙴𝙰𝙳𝙾𝚁:Geral-Bot
-│➯ *𝙸𝙽𝙵𝙾: Wa.me/51935763050
-│➯ *Yape: 900711258
+│➯ *𝙲𝚁𝙴𝙰𝙳𝙾𝚁: ADRIELBOT
+│➯ *𝙸𝙽𝙵𝙾: Wa.me/59168683798
+│➯ *Yape BS: 68683798
 │➯ғᴇᴄʜᴀ:➟${date}
 │➯ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:➟${uptime}
 │➯ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
 ︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「 𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 」
+🐻‍❄️᭢━━━━━━━━━᭥🐻‍❄️᭢
+╭「 𝐀𝐝𝐫𝐢𝐞𝐥 𝐁𝐨𝐭 」
 │➯*Menu*+18*
 ︎╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
@@ -59,7 +59,7 @@ let str = `╭「 Bᴏɴɴɪ💕 」
 │➯ *.pene*
 │➯ *.porno*
 │➯ *.randomxxx*
-│➯⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰✍
+│➯⫷᭄𝙰𝙳𝚁𝙸𝙴𝙻-𝙱𝙾𝚃✍
 ︎╰───────────────╯`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'Darling.mp3', null, m, true, { type: 'audioMessage', ptt: true})
