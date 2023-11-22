@@ -19,26 +19,39 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `╭「 LudmiBot 」
-│➯ *𝗛ᴏʟᴀ,➟${taguser}
-│➯ *𝙲𝚁𝙴𝙰𝙳𝙾𝚁: Ezequiel
-│➯ *𝙸𝙽𝙵𝙾: Wa.me/+51907183648
-│➯ *Yape: 907183648
-│➯ *ғᴇᴄʜᴀ:➟${date}
-│➯ *ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:➟${uptime}
-│➯ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
-︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Estadísticas* ➻❥」
-│➯ *✳️️Nivel:* ${level}
-│➯ *🧿Experiencia:* ${exp}
-│➯ *⚓Rango:* ${role}
-│➯ *💎Diamantes:* ${limit}
-│➯ *👾GabiCoins:* ${money}
-│➯ *🪙Tokens:* ${joincount}
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *gana y compara* ➻❥」
+let str = 
+*╭━━❍𝐀𝐃𝐑𝐈𝐄𝐋-𝐁𝐎𝐓❍━━╮*
+*┃ ╭━━━━━━━━━━━━━━━━╮*
+*┃ ┃ ╭┈────────────╮*
+*┃ ┃ │❍  𝐌𝐄𝐍𝐔 ❍*
+*┃ ┃ ╰┈────────────╯*
+*┃ ╰━━━━━━━━━━━━━━━━╯*
+*┣━━━▢ ❤𝐇𝐎𝐋𝐀, ${username}❤*•
+*┃╭━━━━━━━━━━━━━━━━╾•*
+*┃┃  ❍ ${ucapan()} ❍*
+*┃┣━━━━━━━━━━━━━━━━╾•*
+*┃┃ ▢ 𝙑𝙀𝙍𝙎𝙄𝙊𝙉 » ${vs}*
+*┃┃ ▢ 𝙁𝙀𝘾𝙃𝘼 » ${week}, ${date}*
+*┃┃ ▢ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 » ${uptime}*
+*┃┃ ▢ 𝙇𝙀𝙉𝙂𝙐𝘼𝙅𝙀 » 𝐄𝐒𝐏𝐀𝐍̃𝐎𝐋*
+*┃┃ ▢ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 » ${Object.keys(global.db.data.users).length}*
+*┃╰━━━━━━━━━━━━━━━━╾•*
+*╰━━━╼𝐀𝐝𝐫𝐢𝐞𝐥𝐁𝐨𝐭𝖙╾━━━╯*`.trim()
+
+let menuB = `
+*═〔 INFO DEL USUARIO 〕⬣═*
+*║👤 𝙉𝙊𝙈𝘽𝙍𝙀: ${username}*
+*║🧰 𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙄𝘼 ➟ ${exp}*
+*║⚓ 𝙍𝘼𝙉𝙂𝙊 ➟* ${role}*
+*║💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎 ➟ ${limit}*
+*║👾 𝘼𝘿𝙍𝙄-𝘾𝙊𝙄𝙉𝙎 ➟ ${adricoins}*
+*╰══*════════════
+
+┌──「📦𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍」─
+├📂 _${usedPrefix}grupos_
+└────ׂ─ׂ─ׂ─ׂ───
+
+╭───「📦𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍」─
 │➯ *.minar gana xp*
 │➯ *.minar2 gana Diamantes*
 │➯ *.minar3 gana Hades-Coins*
@@ -61,214 +74,7 @@ let str = `╭「 LudmiBot 」
 │➯ *.robar roba experiencia*
 │➯ *.robardiamantes roba diamantes*
 ╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Grupos* ➻❥」
-│➯ *.welcome @tag*
-│➯ *bye @tag*
-│➯ *.promote @tag*
-│➯ *.demote @tag*
-│➯ *.reac <reaccion del bot>*
-│➯ *.infogp <info del grupo>*
-│➯ *.infobot <estado del bot>*
-│➯ *.grupo abrir/cerrar*
-│➯ *.hidetag*
-│➯ *.kick*
-│➯ *.banchat banea el chat*
-│➯ *.unbanchat desbanea el chat*
-│➯ *.delete elimina mensajes del bot*
-│➯ *.link link de tu grupo*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *menus* ➻❥」
-│➯ *.menu2*
-│➯ *.animes*
-│➯ *.grupos*
-│➯ *.owner*
-│➯ *.labiblia*
-│➯ *.enable*
-│➯ *.instalarbot*
-│➯ *.comangrupos*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Stickers* ➻❥」
-│➯ *.cryy*
-│➯ *.hugg*
-│➯ *.gura*
-│➯ *.cat <gatito>*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Acciones* ➻❥」
-│➯ *.besar <tag>*
-│➯ *.abrazar <tag>*
-│➯ *.patear <tag>*
-│➯ *.follar <tag>*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭──「➻❥ *Descargas* ➻❥」
-│➯ *.wikipedia <busqueda>*
-│➯ *.animeinfo <nombre>*
-│➯ *.play nombre de tu canción*
-│➯ *.play2 nombre de tu video*
-│➯ *.play3 nombre de tu canción,doc*
-│➯ *.play4 nombre de tu video,doc*
-│➯ *.ytmp3 tu link  Audio*
-│➯ *.ytmp4 tu link  video*
-│➯ *.ytmp3doc link canción,doc*
-│➯ *.ytmp4doc link video,doc*
-│➯ *.facebook tu link de fb*
-│➯ *.tiktok link de video tiktok*
-│➯ *.mediafire link de mediafire*
-│➯ *.twitter tu link de twt*
-│➯ *.ig link de tu video en ig*
-│➯ *.google resultados de google*
-│➯ *.ytbuscar busqueda en Youtube*
-│➯ *.gdrive link de drive*
-│➯ *.whatmusic responde a una audio*
-│➯ *.calculadora Ejemplo : .calc 2+2*
-│➯ *.ia chatgpt*
-│➯ *.iaimagen imagenes creadas*
-│➯ *.fondo nombre de tu fondo*
-│➯ *.ssweb link de tu img*
-│➯ *.tts audio google*
-│➯ *.queanime resultado*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Juegos* ➻❥」
-│➯ *.casino <apuesta>*
-│➯ *.meme <meme>*
-│➯ *.charlie <pregunta>*
-│➯ *.love medidor de amor*
-│➯ *.gay2 porcentaje*
-│➯ *.puta porcentaje*
-│➯ *.puto porcentaje*
-│➯ *.pajero porcentaje*
-│➯ *.pajera porcentaje*
-│➯ *.lesbiana porcentaje*
-│➯ *.juego piedra/papel/tijera*
-│➯ *.simi pregunta simi*
-│➯ *.mates dificultades matemáticas*
-│➯ *.levelup subir de nivel*
-│➯ *.reto reto del bot*
-│➯ *.verdad verdad del bot*
-│➯ *.formarpareja parejas ramdon*
-│➯ *.hornycard licencia horny*
-│➯ *.slot ruleta*
-│➯ *.trabajar trabaja para ganar xp*
-│➯ *.piropo piropo del bot*
-︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥*Efectos de audio*➻❥」
-│➯ *.rapido*
-│➯ *.lento*
-│➯ *.nightcore*
-│➯ *.fuerte*
-│➯ *.revertir*
-│➯ *.saturar*
-│➯ *.robot*
-︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥*Otros Comandos*➻❥」
-│➯ *.hd <imagen>*
-│➯ *.crearmeme*
-│➯ *.cuaderno*
-│➯ *.topdf*
-│➯ *.pubtrump*
-│➯ *.emojimix*
-│➯ *.ytcomment*
-│➯ *.logonavidad*
-│➯ *.logocorazon*
-│➯ *.filtroanime*
-│➯ *.filtrodibujo*
-│➯ *.pixelar*
-│➯ *.Itssostupid*
-│➯ *.difuminar2*
-│➯ *.sticker*
-│➯ *.wm paquete | nombre*
-│➯ *.removebg*
-│➯ *.toimg*
-│➯ *.tovn*
-│➯ *.tomp3*
-│➯ *.afk*
-│➯ *.tomp4* 
-│➯ *.togifaud*
-│➯ *.tovideo*
-│➯ *.attp3*
-│➯ *.ttp*
-│➯ *.ttp2*
-│➯ *.wpmontaña*
-│➯ *.wpgaming*
-│➯ *.doraemon*
-│➯ *.wpaesthetic*
-│➯ *.planeta*
-│➯ *.technology*
-│➯ *.ciberespacio*
-│➯ *.caricatura*
-│➯ *.pubg*
-│➯ *.wprandom*
-│➯ *.ttp3*
-│➯ *.ttp5*
-│➯ *.styletext* 
-︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Logos* ➻❥」
-│➯ *.blackpink <texto>*
-│➯ *.bloodfrosted <texto>*
-│➯ *.bokelog <texto>*
-│➯ *.box3d <texto>*
-│➯ *.breakwall  <texto>*
-│➯ *.cloud <texto>*
-│➯ *.deluxesilver <texto>*
-│➯ *.futureneon <texto>*
-│➯ *.halloween <texto>*
-│➯ *.icecold <texto>*
-│➯ *.impressiveglitch <texto>*
-│➯ *.jokerlogo <texto>*
-│➯ *.logolol <texto>*
-│➯ *.luxurylog <texto>*
-│➯ *.holographic <texto>*
-│➯ *.magma <texto>*
-│➯ *.metaldark <texto>*
-│➯ *.minion <texto>*
-│➯ *.natureleaves <texto>*
-│➯ *.neon <texto>*
-│➯ *.neonlight <texto>*
-│➯ *.newyearcard <texto>*
-│➯ *.roadwarning <texto>*
-│➯ *.sandengraved <texto>*
-│➯ *.sandsummer <texto>*
-│➯ *.sparkle <texto>*
-│➯ *.strawberry <texto>*
-│➯ *.text1917 <texto>*
-│➯ *.thunder <texto>*
-│➯ *.toxic <texto>*
-│➯ *.watercolor <texto>*
-│➯ *.wonderfulgraffiti <texto>*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Jadibot* ➻❥」
-│➯ *.serbot*
-│➯ *.stop borra tu sesión antigua*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Creadores* ➻❥」
-│➯ *.boost*
-│➯ *.block*
-│➯ *.spamgp*
-│➯ *.ip*
-│➯ *.limpiarbot*
-│➯ *.hesoyam*
-│➯ *.unblock*
-│➯ *.join*
-│➯ *.salir*
-│➯ *.blocklist*
-│➯ *.unblocklist*
-│➯ *.setppbot*
-│➯ *.robargp*
-│➯ *.banuser*
-│➯ *.setprefix*
-│➯ *.resetprefix*
-│➯ *.unbanuser*
-│➯ *.del*
+
 ╰───────────────╯`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'Darling.mp3', null, m, true, { type: 'audioMessage', ptt: true})
